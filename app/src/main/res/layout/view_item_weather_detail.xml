@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Date"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/primary_text"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_below="@id/tv_date">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/art_clear"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weather status"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_regular"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginTop="@dimen/margin_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="30'"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_big"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif-light"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="22'"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_regular_3x"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginTop="@dimen/margin_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:background="#4F5F68">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount value"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/ash"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount value"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/ash"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amount value"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/ash"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_weather"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="@dimen/margin_large"
+    android:paddingRight="@dimen/margin_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/art_clear"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/primary_text"
+                android:fontFamily="sans-serif-light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather status"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_smaller"
+                android:textColor="@color/secondary_text"
+                android:fontFamily="sans-serif-light"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="30'"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="22'"
+            android:textSize="@dimen/text_regular"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
